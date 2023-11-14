@@ -4,3 +4,13 @@
     }
 </style>
 <p class="indented">
+
+<style>
+    .custom-margin {
+        margin: 20px;
+    }
+</style>
+
+<div class="custom-margin">
+    <!-- Your content here -->
+</div>
