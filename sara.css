@@ -14,3 +14,9 @@
 <div class="custom-margin">
     <!-- Your content here -->
 </div>
+header {
+    background-color: #1E7C88;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
