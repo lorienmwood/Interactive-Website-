@@ -7,3 +7,30 @@ geh1 {
 body {
     background-color: #fbdec0;
 }
+
+<style>
+        /* Styles for header */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Style for navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
