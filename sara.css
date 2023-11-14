@@ -1,15 +1,15 @@
-<style>
+
     .indented {
         text-indent: 30px; /* Adjust the value as needed */
     }
-</style>
+
 <p class="indented">
 
-<style>
+
     .custom-margin {
         margin: 20px;
     }
-</style>
+
 
 <div class="custom-margin">
     <!-- Your content here -->
