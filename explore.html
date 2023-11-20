@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="img/Asset 7@288x-100.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Global Roamers | Explore</title>
+    <style>
+        /* background */
+        .bg {
+            /* The image used */
+            background-image: url(img/scotland.jpg);
+            /* Full height */
+            height: 100vh;
+            /* Center and scale  */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo"><a href="index.html">GLOBAL ROAMERS</a></div>
+                    <ul class="links">
+                        <li><a href="explore.html">EXPLORE</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="window.location.href = 'destinations.html';">DESTINATIONS
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Europe</a>
+                                <a href="#">North America</a>
+                                <a href="#">South America</a>
+                            </div>
+                        </div>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="resources.html">RESOURCES</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" class="action_btn" placeholder="Search...">
+                    </div>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="destinations.html">DESTINATIONS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="resources.html">RESOURCES</a></li>
+            <input type="text" class="action_btn" placeholder="Search...">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="scroll-container">
+                <img src="img/background.jpg" alt="Cinque Terre">
+                <img src="img/background.jpg" alt="Forest">
+                <img src="img/background.jpg" alt="Northern Lights">
+                <img src="img/background.jpg" alt="Mountains">
+            </div>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classlist.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+        window.addEventListener('scroll', function () {
+            // code to be executed when user scrolls
+        });
+
+    </script>
+    <!-- Footer -->
+    <footer>
+        <P>THIS IS A FOOTER</P>
+    </footer>
+</body>
+
+</html>

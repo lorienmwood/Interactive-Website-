@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="/images/Asset 7@288x-100.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Global Roamers | About </title>
+
+    <style>
+        /* background */
+        .bg {
+            /* The image used */
+            background-image: url(img/sky.jpg);
+            /* Full height */
+            height: 100vh;
+            /* Center and scale  */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .card-style {
+            height: 360px;
+            width: 280px;
+            text-align: left;
+            /* margin-left: auto;
+            margin-right: auto; */
+            position: relative;
+        }
+
+        .card-style .overlay {
+            position: absolute;
+            top: 300px;
+            font-weight: bold;
+            font-size: medium;
+            left: 95px;
+            color: white;
+        }
+
+        .image-style {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+
+        }
+
+        .card-grid {
+            display: grid;
+            margin: 16rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            align-items: center;
+            grid-auto-rows: auto;
+            grid-gap: 4rem;
+        }
+
+        .card-content {
+            padding: 10px;
+            height: 40px;
+            text-overflow: ellipsis;
+            text-align: center;
+            font-weight: 500;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo"><a href="index.html">GLOBAL ROAMERS</a></div>
+                    <ul class="links">
+                        <li><a href="explore.html">EXPLORE</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="window.location.href = 'destinations.html';">DESTINATIONS
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Europe</a>
+                                <a href="#">North America</a>
+                                <a href="#">South America</a>
+                            </div>
+                        </div>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="resources.html">RESOURCES</a></li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" class="action_btn" placeholder="Search...">
+                    </div>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="destinations.html">DESTINATIONS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="resources.html">RESOURCES</a></li>
+            <input type="text" class="action_btn" placeholder="Search...">
+        </div>
+
+        <main>
+            <section>
+                <div class="card-grid">
+                    <div class="card-style">
+                        <img src="img/scotland.jpg" class="image-style" alt="paris" />
+                        <div class="overlay">
+                            <p> EXPLORE </p>
+                        </div>
+                        <div class="card-content">
+                            All our travel writing by topic – hiking, cities, road trips + more
+                        </div>
+
+                    </div>
+                    <div class="card-style">
+                        <img src="img/rocks.jpg" class="image-style" alt="lisbon" />
+                        <div class="overlay">
+                            <p>DESTINATIONS</p>
+                        </div>
+                        <div class="card-content">
+                            All the places we cover including destination guides and itineraries
+                        </div>
+
+
+                    </div>
+                    <div class="card-style">
+                        <img src="img/green.jpg" class="image-style" alt="hot air balloons in turkey" />
+                        <div class="overlay">
+                            <p>RESOURCES</p>
+                        </div>
+                        <div class="card-content">
+                            Our resource page with all the travel providers we use to book our trips
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classlist.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+            window.addEventListener('scroll', function () {
+                // code to be executed when user scrolls
+            });
+
+        </script>
+        <footer>
+            <P>THIS IS A FOOTER
+        </footer>
+</body>
+
+</html>
