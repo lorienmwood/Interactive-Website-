@@ -86,9 +86,10 @@ header {
   background-color: white;
   color: black;
   padding: 0.3rem 0.7rem;
+  margin-right: 10px;
   border: none;
   outline: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   font-family: "Open sans", sans-serif;
@@ -107,16 +108,18 @@ header {
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 20px;
 }
 .dropdown_menu.open {
   height: 240px;
 }
 
 .dropdown_menu li {
-  padding: 0.5rem;
+  padding: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
 }
 
 /* RESPONSIVE WEBSITE */
@@ -215,9 +218,11 @@ div.scroll-container img {
 }
 
 .dropdown_menu .action_btn {
-  margin: auto;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 70%;
+  font-size: medium;
 }
 
 .main-destinations {
