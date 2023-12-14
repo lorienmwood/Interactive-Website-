@@ -37,7 +37,10 @@
         .gallery__item3,
         .gallery__item4,
         .gallery__item5,
-        .gallery__item6 {
+        .gallery__item6,
+        .gallery__item7,
+        .gallery__item8,
+        .gallery__item9 {
             position: relative;
         }
 
@@ -104,6 +107,29 @@
             grid-column-end: 9;
             grid-row-start: 6;
             grid-row-end: 9;
+        }
+
+        .gallery__item7 {
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 9;
+            grid-row-end: 9;
+            height: 100px
+        }
+
+        .gallery__item8 {
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
+
+        .gallery__item9 {
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+
         }
 
         .text-container a {
@@ -193,46 +219,72 @@
                 <img src="img/background.jpg" alt="Mountains">
             </div>
         </section>
-        <h3 style="text-align: center; margin-top: 50px;">EUROPE</h3>
+        <section>
+            <h3 style="text-align: center; margin-top: 50px;">EUROPE</h3>
 
-        <div class="gallery">
-            <figure class="gallery__item1">
-                <a href="france.html">
-                    <img src="img/paris.jpg" class="gallery__img" alt="Image 1">
-                    <figcaption class="gallery__caption">FRANCE</figcaption>
-                </a>
-            </figure>
-            <figure class="gallery__item2">
-                <a href="ireland.html">
-                    <img src="img/ireland.jpg" class="gallery__img" alt="Image 1">
-                    <figcaption class="gallery__caption">IRELAND</figcaption>
-                </a>
-            </figure>
-            <figure class="gallery__item3">
-                <a href="iceland.html">
-                    <img src="img/iceland.jpg" class="gallery__img" alt="Image 1">
-                    <figcaption class="gallery__caption">ICELAND</figcaption>
-                </a>
-            </figure>
-            <figure class="gallery__item4">
-                <a href="lisbon.html">
-                    <img src="img/lisbon.jpg" class="gallery__img" alt="Image 1">
-                    <figcaption class="gallery__caption">PORTUGUAL</figcaption>
-                </a>
-            </figure>
-            <figure class="gallery__item5">
-                <a href="copenhagen.html">
-                    <img src="img/copenhagen.jpg" class="gallery__img" alt="Image 1">
-                    <figcaption class="gallery__caption">DENMARK</figcaption>
-                </a>
-            </figure>
-            <figure class="gallery__item6">
-                <a href="switzerland.html">
-                    <img src="img/switzerland.jpg" class="gallery__img" alt="Image 1">
-                    <figcaption class="gallery__caption">SWITZERLAND</figcaption>
-                </a>
-            </figure>
-        </div>
+            <div class="gallery">
+                <figure class="gallery__item1">
+                    <a href="france.html">
+                        <img src="img/paris.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">FRANCE</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item2">
+                    <a href="ireland.html">
+                        <img src="img/ireland.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">IRELAND</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item3">
+                    <a href="iceland.html">
+                        <img src="img/iceland.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">ICELAND</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item4">
+                    <a href="lisbon.html">
+                        <img src="img/lisbon.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">PORTUGUAL</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item5">
+                    <a href="copenhagen.html">
+                        <img src="img/copenhagen.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">DENMARK</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item6">
+                    <a href="switzerland.html">
+                        <img src="img/switzerland.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">SWITZERLAND</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item7">
+                    <a href="sweden.html">
+                        <img src="img/sweden.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">SWEDEN</figcaption>
+                    </a>
+                </figure>
+            </div>
+        </section>
+        <br>
+        <section>
+            <h3 style="text-align: center; margin-top: 50px;">AUSTRALIA</h3>
+
+            <div class="gallery">
+                <figure class="gallery__item8">
+                    <a href="newzealand.html">
+                        <img src="img/newzealand.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">NEW ZEALAND</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item9">
+                    <a href="australia.html">
+                        <img src="img/australia.jpg" class="gallery__img" alt="Image 1">
+                        <figcaption class="gallery__caption">AUSTRALIA</figcaption>
+                    </a>
+                </figure>
+        </section>
     </main>
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
